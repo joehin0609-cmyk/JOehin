@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>Warehouse System- 註冊用戶</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>建立新用戶</h2>
+        <form id="registerForm">
+            <div class="input-group">
+                <label>Login Name (Login Name)</label>
+                <input type="text" id="loginName" required placeholder="用於登入的帳號">
+            </div>
+            <div class="input-group">
+                <label>顯示名稱 (Username)</label>
+                <input type="text" id="username" required placeholder="例如：管理員 A">
+            </div>
+            <div class="input-group">
+                <label>密碼</label>
+                <input type="password" id="password" required placeholder="設定密碼">
+            </div>
+            <div class="input-group">
+                <label>電話號碼</label>
+                <input type="text" id="phone" placeholder="輸入電話">
+            </div>
+            <div class="input-group">
+                <label>權限角色</label>
+                <select id="role">
+                    <option value="staff">一般職員 (Staff)</option>
+                    <option value="admin">管理員 (Admin)</option>
+                </select>
+            </div>
+            <button type="submit">確認註冊</button>
+            <p id="message"></p>
+            <a href="index.html" style="display:block; margin-top:10px; text-align:center;">返回登入</a>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
